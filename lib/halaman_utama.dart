@@ -19,7 +19,6 @@ class _HalamanUtamaState extends State<HalamanUtama> {
     });
   }
 
-  // menambahkan widget custom
   Widget personDetailCard(UserModel data) {
     return Padding(
       padding: const EdgeInsets.all(10),
@@ -55,7 +54,6 @@ class _HalamanUtamaState extends State<HalamanUtama> {
     getDataUser();
   }
 
-  // ini
   showDetailDialog(UserModel data) {
     showDialog(
         context: context,
