@@ -57,18 +57,28 @@ class _HalamanUtamaState extends State<HalamanUtama> {
 
   showDetailDialog(UserModel data) {
     showDialog(
-        context: context,
-        builder: (context) {
-          return SimpleDialog(
-            title: const Text('Detail Person'),
-            children: [
-              Text("Name : ${data.name}"),
-              Text("Email : ${data.email}"),
-              Text("Username : ${data.username}"),
-              Text("Website : ${data.website}"),
-            ],
-          );
-        });
+      context: context,
+      builder: (context) {
+        return SimpleDialog(
+          title: const Center(child: Text('Detail Person')),
+          children: [
+            Column(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Name : ${data.name}"),
+                    Text("Email : ${data.email}"),
+                    Text("Username : ${data.username}"),
+                    Text("Website : ${data.website}"),
+                  ],
+                )
+              ],
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
