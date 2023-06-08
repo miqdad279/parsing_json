@@ -21,9 +21,10 @@ class _HalamanUtamaState extends State<HalamanUtama> {
 
   Widget personDetailCard(UserModel data) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.only(left: 10, right: 10, bottom: 8),
       child: Card(
-        color: Colors.grey[800],
+        elevation: 0,
+        color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.all(8),
           child: Column(
@@ -31,15 +32,15 @@ class _HalamanUtamaState extends State<HalamanUtama> {
             children: [
               Text(
                 data.name,
-                style: const TextStyle(color: Colors.white, fontSize: 18),
+                style: const TextStyle(color: Colors.black, fontSize: 18),
               ),
               Text(
                 data.username,
-                style: const TextStyle(color: Colors.white, fontSize: 18),
+                style: const TextStyle(color: Colors.black, fontSize: 18),
               ),
               Text(
                 data.email,
-                style: const TextStyle(color: Colors.white, fontSize: 18),
+                style: const TextStyle(color: Colors.black, fontSize: 18),
               ),
             ],
           ),
@@ -73,6 +74,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffF6F9FF),
       appBar: AppBar(
         title: const Text('Halaman Utama'),
       ),
