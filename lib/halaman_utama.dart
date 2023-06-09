@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'usermodel.dart';
-import 'userviewmodel.dart';
+import 'user_model.dart';
+import 'user_view_model.dart';
 
 class HalamanUtama extends StatefulWidget {
   const HalamanUtama({super.key});
